@@ -26,7 +26,7 @@ If you prefer shorter versions of these blogs, subscribe to [Data Science Simpli
 1. [Book Review](#book-review)
 1. [Data Science Portfolio](#data-science-portfolio)
 
-# Go
+# Go                (#Contents)
 
 hello
 
