@@ -27,12 +27,24 @@ If you prefer shorter versions of these blogs, subscribe to [Data Science Simpli
 1. [Data Science Portfolio](#data-science-portfolio)
 
 # Go                
-        [home](#Contents)
+   [home](#Contents)
 
-hello
+## Read Operations
+```python
+#types
+dataset.dtypes
 
+names = ['no', 'GRE', 'TOEFL', 'Univ_rating', 'SOP', 'LOR', 'CGPA', 'Research', 'Chance_of_admit']
+dataset.columns = names
 
+dataset.describe()
 
+dataset = dataset.drop_duplicates()
+dataset = dataset.drop('no', axis=1)
+```
 
+> This is also useful
+
+Done...
 
 
