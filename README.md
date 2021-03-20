@@ -7,7 +7,7 @@ Collection of useful data science topics along with code and articles in my [dat
 If you prefer shorter versions of these blogs, subscribe to [Data Science Simplified](https://mathdatasimplified.com/) to receive bite-sized data science tips in your mailbox daily.
 
 # Contents
-1. [Data Science Tools](#data-science-tools)
+1. [Data Science Tools](#Go)
 1. [Machine Learning](#machine-learning)
 1. [Natural Language Processing](#natural-language-processing)
 1. [Computer Vision](#computer-vision)
@@ -26,7 +26,7 @@ If you prefer shorter versions of these blogs, subscribe to [Data Science Simpli
 1. [Book Review](#book-review)
 1. [Data Science Portfolio](#data-science-portfolio)
 
-# Data Science Tools 
+# Go
 
 hello
 
