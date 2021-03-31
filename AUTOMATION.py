@@ -1,5 +1,6 @@
 import shutil
 import os
+import csv
 import pandas as pd
 
 
@@ -7,43 +8,47 @@ ROOT = os.getcwd()
 NEWFILES_PATH = "{}/New_Files".format(ROOT)
 TOPIC_PATH = "{}/Topics".format(ROOT)
 
+def getData(number):
+    with open('LeetCode_Scrapping/leetcodeDataSet.csv', 'r') as file:
+        reader = csv.DictReader(file)
+        for index, line in enumerate(reader):
+            if(index == number-1):
+                return line
+
+def checkTopicsAvaibality(topics):
+    for topic in topics:
+        if(not os.path.isfile("{}/{}.csv".format(TOPIC_PATH, topic))):
+            return topic
+    return 1
+
 
 files = os.listdir(NEWFILES_PATH)
 
 for file in files:
     main = {}
     
-    Obj = open("{}/{}".format(NEWFILES_PATH, file), "r")
-    fileName = Obj.readline()
-    fileName = fileName[2:-1].split(", ")
-    fileName = fileName[1]
-    for i in range(7):
-        string = Obj.readline()
-        string = string[2:-1].split(", ")
-        if(i != 6):
-            main[string[0]] = string[1]
-        else:
-            topics = string[1:]
+    with open("{}/{}".format(NEWFILES_PATH, file), "r") as Obj:
+        main["Run Time"] = Obj.readline()[2:-1]
+        topics = Obj.readline()[2:-1].split(", ")
     
-    for topic in topics:
-        topicFileName = "{}/{}.csv".format(TOPIC_PATH, topic)
-        if(os.path.isfile(topicFileName)):
+    number = int(file[:4])
+    main.update(getData(number))
+    
+    checkTopics = checkTopicsAvaibality(topics)
+    if(checkTopics == 1):
+        for topic in topics:
+            topicFileName = "{}/{}.csv".format(TOPIC_PATH, topic)
             df = pd.read_csv(topicFileName)
             df = df.append(main, ignore_index=True)
-        else:
-            print("ERROR: NOT FOUND !!!!!!!!! ==>", topicFileName)
-            topic = input("TYPE NAME MANUALLY :")
-            df = pd.read_csv("{}/{}.csv".format(TOPIC_PATH, topic))
-            df = df.append(main, ignore_index=True)
-        df.to_csv("{}/{}.csv".format(TOPIC_PATH, topic), index=False)
-    
-    Obj.close()
+            df.to_csv(topicFileName, index=False)
+    else:
+        print("ERROR : ============> '{}.csv' NOT PRESENT".format(checkTopics))
+        continue
     
     folderName = main["Difficulty"]
 
-    source = "{}/{}".format(NEWFILES_PATH, fileName)
-    destination = "{}/{}".format(folderName, fileName)
+    source = "{}/{}".format(NEWFILES_PATH, file)
+    destination = "{}/{}".format(folderName, file)
     
     shutil.move(source, destination)
-    
-print("PROCESS FINISHED :)")
+    print("{} PROCESSED SUCCESSFULLY".format(file))
