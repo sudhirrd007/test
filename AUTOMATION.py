@@ -5,8 +5,8 @@ import pandas as pd
 
 
 ROOT = os.getcwd()
-NEWFILES_PATH = "{}/New_Files".format(ROOT)
-TOPIC_PATH = "{}/Topics".format(ROOT)
+NEWFILES_PATH = "{}/DATA/New_Files".format(ROOT)
+TOPIC_PATH = "{}/DATA/Topics".format(ROOT)
 
 def getData(number):
     with open('LeetCode_Scrapping/leetcodeDataSet.csv', 'r') as file:
