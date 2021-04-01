@@ -25,10 +25,11 @@ def topicDataExtraction(topic):
             tempStr = "|   {}   |   ".format(tempLine[0])
             
             number = stringFormation(tempLine[0])
+            difficulty = tempLine[3]
             fileName = "_".join(tempLine[1].lower().split(" "))
             fileName = "{}_{}.py".format(number, fileName)
             
-            tempStr += "[{}]({})   |".format(tempLine[1], fileName)
+            tempStr += "[{}]({}/{})   |".format(tempLine[1], difficulty, fileName)
             tempStr += "   |   ".join(tempLine[2:5]) + "   |   "
             tempStr += "[Redirect]({})   |\n".format(tempLine[5])
             strings.append(tempStr)
