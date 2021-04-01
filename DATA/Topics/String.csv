@@ -1,1 +1,3 @@
 #,Title,Run Time,Difficulty,Acceptance rate,LeetCode Link
+5,Longest Palindromic Substring,8196 ms,MEDIUM,30.61%,https://leetcode.com/problems/longest-palindromic-substring
+3,Longest Substring Without Repeating Characters,1888 ms,MEDIUM,31.52%,https://leetcode.com/problems/longest-substring-without-repeating-characters

@@ -7,6 +7,13 @@ def checkTopicFile(topics):
                 filledFiles.append(topic)
     return filledFiles
 
+def stringFormation(val):
+    L = len(val)
+    number = ""
+    for i in range(4-L):
+        number += "0"
+    number += val
+    return number
 
 def topicDataExtraction(topic):
     strings = ["|  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |\n",
@@ -15,8 +22,16 @@ def topicDataExtraction(topic):
         Obj.readline()
         for line in Obj:
             tempLine = line[:-1].split(",")
-            tempLine = "|  " + "   |   ".join(tempLine) + "  |\n"
-            strings.append(tempLine)
+            tempStr = "|   {}   |   ".format(tempLine[0])
+            
+            number = stringFormation(tempLine[0])
+            fileName = "_".join(tempLine[1].lower().split(" "))
+            fileName = "{}_{}.py".format(number, fileName)
+            
+            tempStr += "[{}]({})   |".format(tempLine[1], fileName)
+            tempStr += "   |   ".join(tempLine[2:5]) + "   |   "
+            tempStr += "[Redirect]({})   |\n".format(tempLine[5])
+            strings.append(tempStr)
     return strings
 
 

@@ -63,21 +63,80 @@ Official [LeetCode](https://leetcode.com/problemset/all/) problems with solution
 # Array
 |  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |
 |-----|---------------- |  --------------- | ------------- | ------------- | ------------- |
-|  1   |   Two Sum   |   6948 ms   |   EASY   |   46.65%   |   https://leetcode.com/problems/two-sum  |
+|   4   |   [Median of Two Sorted Arrays](0004_median_of_two_sorted_arrays.py)   |104 ms   |   HARD   |   31.31%   |   [Redirect](https://leetcode.com/problems/median-of-two-sorted-arrays)   |
+|   1   |   [Two Sum](0001_two_sum.py)   |6948 ms   |   EASY   |   46.65%   |   [Redirect](https://leetcode.com/problems/two-sum)   |
+
+
+
+# Binary Search
+|  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |
+|-----|---------------- |  --------------- | ------------- | ------------- | ------------- |
+|   4   |   [Median of Two Sorted Arrays](0004_median_of_two_sorted_arrays.py)   |104 ms   |   HARD   |   31.31%   |   [Redirect](https://leetcode.com/problems/median-of-two-sorted-arrays)   |
+
+
+
+# Divide And Conquer
+|  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |
+|-----|---------------- |  --------------- | ------------- | ------------- | ------------- |
+|   4   |   [Median of Two Sorted Arrays](0004_median_of_two_sorted_arrays.py)   |104 ms   |   HARD   |   31.31%   |   [Redirect](https://leetcode.com/problems/median-of-two-sorted-arrays)   |
+
+
+
+# Dynamic Programing
+|  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |
+|-----|---------------- |  --------------- | ------------- | ------------- | ------------- |
+|   5   |   [Longest Palindromic Substring](0005_longest_palindromic_substring.py)   |8196 ms   |   MEDIUM   |   30.61%   |   [Redirect](https://leetcode.com/problems/longest-palindromic-substring)   |
 
 
 
 # Hash Table
 |  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |
 |-----|---------------- |  --------------- | ------------- | ------------- | ------------- |
-|  1   |   Two Sum   |   6948 ms   |   EASY   |   46.65%   |   https://leetcode.com/problems/two-sum  |
+|   3   |   [Longest Substring Without Repeating Characters](0003_longest_substring_without_repeating_characters.py)   |1888 ms   |   MEDIUM   |   31.52%   |   [Redirect](https://leetcode.com/problems/longest-substring-without-repeating-characters)   |
+|   1   |   [Two Sum](0001_two_sum.py)   |6948 ms   |   EASY   |   46.65%   |   [Redirect](https://leetcode.com/problems/two-sum)   |
+
+
+
+# Linked List
+|  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |
+|-----|---------------- |  --------------- | ------------- | ------------- | ------------- |
+|   2   |   [Add Two Numbers](0002_add_two_numbers.py)   |68 ms   |   MEDIUM   |   35.65%   |   [Redirect](https://leetcode.com/problems/add-two-numbers)   |
 
 
 
 # Math
 |  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |
 |-----|---------------- |  --------------- | ------------- | ------------- | ------------- |
-|  7   |   Reverse Integer   |   32 ms   |   EASY   |   25.94%   |   https://leetcode.com/problems/reverse-integer  |
+|   2   |   [Add Two Numbers](0002_add_two_numbers.py)   |68 ms   |   MEDIUM   |   35.65%   |   [Redirect](https://leetcode.com/problems/add-two-numbers)   |
+
+
+
+# Recursion
+|  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |
+|-----|---------------- |  --------------- | ------------- | ------------- | ------------- |
+|   2   |   [Add Two Numbers](0002_add_two_numbers.py)   |68 ms   |   MEDIUM   |   35.65%   |   [Redirect](https://leetcode.com/problems/add-two-numbers)   |
+
+
+
+# Sliding Window
+|  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |
+|-----|---------------- |  --------------- | ------------- | ------------- | ------------- |
+|   3   |   [Longest Substring Without Repeating Characters](0003_longest_substring_without_repeating_characters.py)   |1888 ms   |   MEDIUM   |   31.52%   |   [Redirect](https://leetcode.com/problems/longest-substring-without-repeating-characters)   |
+
+
+
+# String
+|  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |
+|-----|---------------- |  --------------- | ------------- | ------------- | ------------- |
+|   5   |   [Longest Palindromic Substring](0005_longest_palindromic_substring.py)   |8196 ms   |   MEDIUM   |   30.61%   |   [Redirect](https://leetcode.com/problems/longest-palindromic-substring)   |
+|   3   |   [Longest Substring Without Repeating Characters](0003_longest_substring_without_repeating_characters.py)   |1888 ms   |   MEDIUM   |   31.52%   |   [Redirect](https://leetcode.com/problems/longest-substring-without-repeating-characters)   |
+
+
+
+# Two Pointers
+|  #  | Title           |   Run Time       | Difficulty    | Acceptance rate | LeetCode Link |
+|-----|---------------- |  --------------- | ------------- | ------------- | ------------- |
+|   3   |   [Longest Substring Without Repeating Characters](0003_longest_substring_without_repeating_characters.py)   |1888 ms   |   MEDIUM   |   31.52%   |   [Redirect](https://leetcode.com/problems/longest-substring-without-repeating-characters)   |
 
 
 
