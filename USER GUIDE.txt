@@ -1,5 +1,0 @@
-1) rename .py file as followes :
-    - <program-number>_<title all small caps words joinned by "_">.py
-    - ex. "0001_two_sum.py"
-2) put newly created file into "DATA/New_Files" folder
-3) then run "AUTOMATION.py" file followed by "README_Maker.py"
